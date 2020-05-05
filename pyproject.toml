@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "boatrace-crawler"
+version = "0.1.0"
+description = ""
+authors = ["amaotone <amane.suzu@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.23.0"
+BeautifulSoup4 = "^4.9.0"
+lxml = "^4.5.0"
+scrapy = "^2.1.0"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
