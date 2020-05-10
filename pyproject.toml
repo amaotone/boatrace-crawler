@@ -10,6 +10,8 @@ requests = "^2.23.0"
 BeautifulSoup4 = "^4.9.0"
 lxml = "^4.5.0"
 scrapy = "^2.1.0"
+more-itertools = "^8.2.0"
+PyDispatcher = "^2.0.5"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"

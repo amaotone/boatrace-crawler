@@ -7,7 +7,7 @@ Scrapyを利用して https://www.boatrace.jp/ をクロールする
 依存ライブラリをインストール
 
 ```bash
-$ poetry update
+$ poetry install
 ```
 
 依存ライブラリを追加
