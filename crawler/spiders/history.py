@@ -260,9 +260,13 @@ class HistorySpider(scrapy.Spider):
         item["water_temperature"] = water
         item["wave_height"] = wave
 
-        item["wind_direction"] = response.css(
+        wind_direction = response.css(
             ".weather1_bodyUnit.is-windDirection p::attr('class')"
-        ).re("is-wind(\d+)")[0]
+        ).re("is-wind(\d+)")
+        if wind_direction:
+            item["wind_direction"] = wind_direction[0]
+        else:
+            item["wind_direction"] = None
 
         # コンピューター予想の取得へ
         url = self.get_url(
